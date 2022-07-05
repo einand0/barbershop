@@ -1,0 +1,125 @@
+.book-wrapper{
+    height: 100vh;
+    background-color: #0D0D0C;
+    display: flex;
+}
+
+.image-book{
+    width: 50%;
+    background-image: url('../../assets/img3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.book-infos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 64px 70px;
+    gap: 15px;
+}
+
+.book-infos h1{
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+    font-size: 64px;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.book-infos h1::after{
+    content:"";
+    background-color: #fff;
+    position: absolute;
+    width: 0;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    transition: 0.6s ease-in-out;
+}
+
+.book-infos h1:hover::after{
+    width: 100%;
+}
+
+fieldset{
+    padding: 40px;
+    color: #fff;
+    width: 400px;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+legend{
+    font-family: 'Darker Grotesque', sans-serif;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.label{
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 23px;
+
+}
+
+fieldset input, fieldset button{
+    font-family: 'Darker Grotesque', sans-serif;
+    border-style: none;
+    width: 90%;
+    height: 36px;
+    display: block;
+    margin-top: 4px;
+    border-radius: 8px;
+    padding: 0 13px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+fieldset button{
+    margin-top: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #b8392e;
+    cursor: pointer;
+    height: 46px;
+    transition: 0.6s ease-in-out;
+}
+
+fieldset button:hover{
+    background-color: #e91906e3;
+}
+
+
+
+
+@media (max-width: 768px){
+    
+  .book-wrapper{
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .image-book{
+    width: 100%;
+    height: 50vh;
+}
+
+  .books-info{
+    width: 100%;
+  }
+
+  fieldset{
+    width: min-content
+  }
+
+
+
+}

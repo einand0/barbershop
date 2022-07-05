@@ -1,0 +1,65 @@
+.container{
+    height: 100vh;
+    background-image: url('../../assets/img5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.name-wrapper{
+    width: 330px;
+    height: 430px;
+    border: 13px double #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.name-wrapper h1{
+    font-size: 64px;
+    font-family: 'Bodoni Moda', serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#book-btn{
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+#book-btn:hover{
+    background-color: #fff;
+    color: black;
+}
+
+
+
+
+@media (max-width: 768px){
+    
+    .container{
+        width: 100%;
+    }
+
+    .name-wrapper{
+        width: 80%;
+    }
+}
